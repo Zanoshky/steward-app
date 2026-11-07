@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guide · Steward user guide</title>
+<meta name="description" content="How to use Steward: Flights, adding a flight, the flight screen, the live update, alerts, the boarding pass, Share ETA, Passport, Settings and the subscription.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Guide · Steward user guide">
+<meta property="og:description" content="How to use Steward: Flights, adding a flight, the flight screen, the live update, alerts, the boarding pass, Share ETA, Passport, Settings and the subscription.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/jetbrains-mono-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>:root {
+color-scheme: light dark;
+--zs-fill: #004cc0;
+--zs-on-fill: #ffffff;
+--zs-glow: #0068ff;
+--zs-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+--zs-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+--zs-fs: 1;
+--zs-type-screen-title: calc(27px * var(--zs-fs));
+--zs-type-app-bar-title: calc(22px * var(--zs-fs));
+--zs-type-pro-headline: calc(22px * var(--zs-fs));
+--zs-type-sheet-title: calc(18px * var(--zs-fs));
+--zs-type-sheet-title-big: calc(22px * var(--zs-fs));
+--zs-type-section-label: calc(13px * var(--zs-fs));
+--zs-type-panel-value: calc(19px * var(--zs-fs));
+--zs-type-number: calc(20px * var(--zs-fs));
+--zs-type-version: calc(17px * var(--zs-fs));
+--zs-type-body: calc(15px * var(--zs-fs));
+--zs-type-key: calc(15px * var(--zs-fs));
+--zs-type-key-main: calc(16px * var(--zs-fs));
+--zs-type-header-key: calc(13px * var(--zs-fs));
+--zs-type-item-name: calc(15px * var(--zs-fs));
+--zs-type-feature-name: calc(15px * var(--zs-fs));
+--zs-type-pitch: calc(14.5px * var(--zs-fs));
+--zs-type-hint: calc(14px * var(--zs-fs));
+--zs-type-small: calc(13.5px * var(--zs-fs));
+--zs-type-feature-line: calc(13px * var(--zs-fs));
+--zs-type-nav-label: calc(12.5px * var(--zs-fs));
+--zs-type-chip: calc(12.5px * var(--zs-fs));
+--zs-type-meta: calc(12.5px * var(--zs-fs));
+--zs-type-axis: calc(12px * var(--zs-fs));
+--zs-r-plate: 16px;
+--zs-r-key: 14px;
+--zs-r-key-focus-inner: 10px;
+--zs-r-header-key: 12px;
+--zs-r-icon-button: 12px;
+--zs-r-row: 12px;
+--zs-r-note: 12px;
+--zs-r-theme-tile: 14px;
+--zs-r-tile-preview: 9px;
+--zs-r-feature-tile: 10px;
+--zs-r-list-icon: 10px;
+--zs-r-sheet-top: 24px;
+--zs-r-grab: 4px;
+--zs-r-pill: 999px;
+--zs-r-chip: 999px;
+--zs-r-switch: 999px;
+--zs-key-h: 52px;
+--zs-header-key-h: 48px;
+--zs-touch: 48px;
+--zs-row-h: 52px;
+--zs-item-h: 56px;
+--zs-nav-item-h: 56px;
+--zs-pill-w: 60px;
+--zs-pill-h: 32px;
+--zs-pro-row-h: 60px;
+--zs-content-max: 1100px;
+--zs-press-ms: 70ms;
+--zs-release-ms: 140ms;
+--zs-look-ms: 250ms;
+--zs-pill-ms: 200ms;
+--zs-s0: 2px;
+--zs-s1: 4px;
+--zs-s2: 6px;
+--zs-s3: 8px;
+--zs-s4: 10px;
+--zs-s5: 12px;
+--zs-s6: 14px;
+--zs-s7: 16px;
+--zs-s8: 18px;
+--zs-s9: 22px;
+--zs-s10: 26px;
+--zs-s11: 28px;
+--zs-s12: 32px;
+--zs-s13: 48px;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+@media (prefers-color-scheme: dark) {
+:root:not([data-look]), :root[data-look="auto"] {
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+}
+:root[data-look="light"] {
+color-scheme: light;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+:root[data-look="dark"] {
+color-scheme: dark;
+--zs-ground: #111215;
+--zs-plate: #18191d;
+--zs-well: #1f2126;
+--zs-line: #2a2c33;
+--zs-edge: #6c707b;
+--zs-bevel: #3a3d46;
+--zs-text: #eceef2;
+--zs-soft: #b5b8c1;
+--zs-blue: #86b6ff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.55);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+:root[data-look="black"] {
+color-scheme: dark;
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+@media (prefers-reduced-motion: reduce) { :root { --zs-press-ms: 0ms; --zs-release-ms: 0ms; --zs-look-ms: 0ms; --zs-pill-ms: 0ms; } }
+@font-face { font-family: Inter; src: url(fonts/inter-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Inter; src: url(fonts/inter-semibold.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+* { box-sizing: border-box; }
+html { background: var(--zs-ground); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; color: var(--zs-text); background: var(--zs-ground); font: 400 1.0625rem/1.6 var(--zs-sans); -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+a { color: var(--zs-blue); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--zs-glow); outline-offset: 3px; border-radius: var(--zs-r-row); }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 20; background: var(--zs-fill); color: var(--zs-on-fill); padding: 12px 18px; border-radius: var(--zs-r-key); font-weight: 600; }
+.skip:focus { left: 12px; }
+.wrap { width: min(var(--zs-content-max), 100% - 40px); margin-inline: auto; }
+h1, h2, .lbl { font-family: var(--zs-mono); font-weight: 700; letter-spacing: 0; margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+h1 { font-size: clamp(2rem, 5.2vw, 3rem); line-height: 1.12; }
+h2 { font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.2; margin: 44px 0 12px; }
+h3, .h3 { font: 600 1.125rem/1.35 var(--zs-sans); margin: 0; }
+.lbl { font-size: .875rem; color: var(--zs-soft); margin: 0 0 10px; }
+p { margin: 0; }
+p + p { margin-top: 12px; }
+.bar { position: sticky; top: 0; z-index: 10; background: var(--zs-ground); border-bottom: 1px solid var(--zs-line); padding-top: env(safe-area-inset-top, 0px); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 12px; min-height: 64px; padding-block: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 48px; color: var(--zs-text); text-decoration: none; font: 700 1.25rem/1 var(--zs-mono); white-space: nowrap; }
+.brand img { width: 34px; height: 34px; border-radius: 9px; }
+.bar nav { display: flex; align-items: center; gap: 4px; }
+.bar nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: var(--zs-r-row); color: var(--zs-soft); font-weight: 600; font-size: .9375rem; text-decoration: none; white-space: nowrap; }
+.bar nav a:hover, .bar nav a[aria-current] { color: var(--zs-text); background: var(--zs-well); }
+@media (max-width: 760px) { .hide-s { display: none !important; } }
+.key { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: var(--zs-key-h); padding: 0 22px; border-radius: var(--zs-r-key); border: 1px solid transparent; font: 600 1rem/1.2 var(--zs-sans); text-decoration: none; text-align: center; cursor: pointer; transition: transform var(--zs-release-ms) ease, filter var(--zs-release-ms) ease; }
+.key:active { transform: scale(.97); transition-duration: var(--zs-press-ms); }
+.key.filled, .bar nav a.key { color: var(--zs-on-fill); background: linear-gradient(var(--zs-fill), var(--zs-fill)) padding-box, linear-gradient(to bottom, rgba(255,255,255,.32), color-mix(in srgb, var(--zs-fill) 65%, #000) 45%) border-box; }
+.key.filled:hover, .bar nav a.key:hover { color: var(--zs-on-fill); filter: brightness(1.08); }
+.bar nav a.key { min-height: 48px; padding: 0 18px; border-radius: var(--zs-r-header-key); }
+.key.tonal { color: var(--zs-text); background: linear-gradient(var(--zs-well), var(--zs-well)) padding-box, linear-gradient(to bottom, var(--zs-bevel), var(--zs-line) 45%) border-box; }
+.keys { display: grid; gap: 10px; margin-top: 28px; max-width: 34rem; }
+@media (min-width: 35em) { .keys { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
+.plate { background: var(--zs-plate); border: 1px solid var(--zs-line); border-radius: var(--zs-r-plate); box-shadow: 0 1px 0 var(--zs-bevel) inset; }
+.page { position: relative; isolation: isolate; padding-block: 40px 72px; }
+.page::before { content: ""; position: absolute; inset: 0 0 auto; height: 320px; z-index: -1; pointer-events: none; background: radial-gradient(60% 100% at 50% 0%, color-mix(in srgb, var(--zs-glow) 12%, transparent), transparent); }
+.lede { margin-top: 16px; max-width: 40rem; color: var(--zs-soft); font-size: clamp(1.0625rem, 1.8vw, 1.25rem); }
+.doc { max-width: 46rem; overflow-wrap: break-word; }
+.doc p, .doc li { color: var(--zs-soft); }
+.doc strong, .doc b { color: var(--zs-text); font-weight: 600; }
+.doc ul, .doc ol { padding-left: 1.3em; }
+.doc li + li { margin-top: 6px; }
+dl.rows { margin: 16px 0 0; padding: 4px 0; }
+dl.rows > div { padding: 14px 18px; }
+dl.rows > div + div { border-top: 1px solid var(--zs-line); }
+dl.rows dt { font-weight: 600; color: var(--zs-text); }
+dl.rows dd { margin: 2px 0 0; color: var(--zs-soft); }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+@media (min-width: 840px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { padding: 22px; display: flex; flex-direction: column; gap: 6px; }
+.card p { color: var(--zs-soft); }
+.card .key { margin-top: auto; align-self: start; }
+.card p:last-of-type { margin-bottom: 14px; }
+.mail { color: var(--zs-text); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+footer { border-top: 1px solid var(--zs-line); padding: 28px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--zs-soft); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+footer nav { display: flex; flex-wrap: wrap; gap: 2px; margin-inline: -12px; }
+footer nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 12px; color: var(--zs-soft); border-radius: var(--zs-r-row); }
+footer nav a:hover, footer nav a[aria-current] { color: var(--zs-text); }
+footer .lic { flex-basis: 100%; font-size: .9375rem; }
+@media (min-width: 2200px) { html { font-size: 130%; } .wrap { width: min(1600px, 100% - 96px); } }
+@media (min-width: 3200px) { html { font-size: 180%; } .wrap { width: min(2400px, 100% - 160px); } }
+@media (prefers-reduced-motion: reduce) { .key { transition: none; } .key:active { transform: none; } }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Steward</span></a>
+    <nav aria-label="Guide pages"><a class="hide-s" href="index.html">Home</a><a class="hide-s" href="guide.html" aria-current="page">Guide</a><a class="hide-s" href="cookbook.html">Cookbook</a><a class="hide-s" href="runbook.html">Runbook</a><a class="hide-s" href="faq.html">Questions</a><a class="hide-s" href="report.html">Report a bug</a><a class="key" href="https://play.google.com/store/apps/details?id=com.zanoshky.steward">Get the app</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+
+    <div class="doc">
+    <p class="lbl">Guide</p>
+    <h1>How Steward works</h1>
+
+    <h2>The first start</h2>
+    <p>Steward runs on Android 10 or newer. It has no account and no sign in. Every trip you follow is watched live by a paid flight data service, so using Steward needs a subscription; there is no free version and no ads. New subscribers get 3 days free through Google Play.</p>
+    <p>Steward asks for notifications, so alerts can reach you. Other asks come only when you turn on the thing that needs them: the calendar for Look in my calendar, and a rough location for From where I am.</p>
+
+    <h2>Three tabs</h2>
+    <p>The bar at the foot of the screen has three tabs, Flights, Passport and Settings, and a round add button for a new flight. Read at the top, tap at the bottom: the big buttons of each screen sit in thumb reach.</p>
+
+    <h2>Flights</h2>
+    <p>Flights is the home screen. Your next trips are listed under Next trips, each with a countdown, the gate when the airport gives it, and its status.</p>
+    <dl class="rows plate">
+      <div><dt>Found in your calendar</dt><dd>With Look in my calendar on, flights Gmail put in your calendar wait here. Tap Add, or Not mine to hide one.</dd></div>
+      <div><dt>Travel day</dt><dd>On the day you fly, the next flight fills the top in big type: the gate (or Gate soon), when it leaves and the time to go, with Boarding pass and Share ETA buttons.</dd></div>
+      <div><dt>Get gate and delay alerts</dt><dd>This card shows when notifications are off. Turn on fixes it.</dd></div>
+      <div><dt>Your trips are not watched</dt><dd>Without a live subscription your trips stay here to read. See plans starts or restarts one.</dd></div>
+    </dl>
+
+    <h2>Add a flight</h2>
+    <p>Tap the add button. Type the flight number, like OU 410, and pick the day from the chips above the box (Later picks any day). Times are local to the departure airport.</p>
+    <dl class="rows plate">
+      <div><dt>Find in my calendar</dt><dd>Reads your calendar on the phone and lists the flights Gmail put there.</dd></div>
+      <div><dt>Share a booking</dt><dd>In Gmail or the airline app, tap Share and pick Steward. Steward finds the flight numbers and the date in the text and looks them up. Nothing else from the email is kept.</dd></div>
+      <div><dt>Read a boarding pass</dt><dd>A screenshot of the pass from your photos, or a PDF or Wallet pass from the airline email. Every leg is added with its seat, and the pass is kept with its flight.</dd></div>
+    </dl>
+
+    <h2>The flight screen</h2>
+    <p>Tap a trip to open it: the flight on a world map with the plane on its route, then the terminal, gate, seat and plane, a timeline with the planned times struck through, and words like 9m early. In the air it shows the altitude, the speed and the distance to go.</p>
+    <dl class="rows plate">
+      <div><dt>Before you fly</dt><dd>Boarding pass, Share ETA and Your plane at the foot. When to leave for the airport, Directions to open your maps app, and about when the doors close.</dd></div>
+      <div><dt>Your plane</dt><dd>Most delays start with the plane before yours. From 25 hours out, Steward follows the aircraft that will fly your flight and shows the delay risk and its turnaround time.</dd></div>
+      <div><dt>After landing</dt><dd>Welcome to the city, the local time and your body clock, the bag belt, and Share arrival, Passport and Return flight.</dd></div>
+      <div><dt>Connections</dt><dd>With a next flight, Steward says how much time you have: Time to make it, Tight connection, or You may miss it.</dd></div>
+      <div><dt>At the bottom</dt><dd>Show the live update again, Stop sharing the live link, and Stop following this flight (tap twice).</dd></div>
+    </dl>
+    <p style="margin-top:12px">Boarding and doors are estimates; the airline's own time wins.</p>
+
+    <h2>The live update on the lock screen</h2>
+    <p>From two hours before departure, one live update shows your flight: the gate, a countdown to boarding, take off or landing, and one bar for the whole trip. On Android 16 and newer it also sits in the status bar as a small chip, like B42, Board, +35 or Belt 7. The lock screen copy never shows your seat.</p>
+    <p>Its buttons are Boarding pass (when a pass is kept), Share ETA, and Unpin. Unpin or a swipe hides it for that flight; Show the live update again, on the flight screen, brings it back.</p>
+
+    <h2>Alerts</h2>
+    <p>Gate and terminal changes, delays of 15 minutes or more, take off and landing with the arrival gate, the bag belt, and your plane running late. Reminders tell you when to check in, when to leave for the airport, and when boarding starts. Each has its own switch in Settings, Tell me about. Cancellations and diversions always come through; a cancelled flight shows the other nonstop flights on the route in the next day, ready to follow.</p>
+
+    <h2>The boarding pass</h2>
+    <p>Open Boarding pass on a flight and add the PDF or Wallet pass from the airline email, or a screenshot from the airline app. Steward reads the barcode and draws it again, sharp and at full brightness. The pass stays on this phone. With several legs, swipe for the others. Add to home screen makes a shortcut to your next pass.</p>
+    <p>At boarding time a tap on the live update opens the pass over the lock screen, without unlocking. Only the pass shows, nothing else. Turn this off in Settings, Boarding pass.</p>
+
+    <h2>Share ETA</h2>
+    <p>Share ETA sends a live link to the people picking you up. It opens in any browser, with no app and no account. It shows the flight only, never your seat or your name, and it ends a few hours after you land. Tell them again when I land, in the share sheet, gives you a Send that I landed note on arrival. Stop sharing the live link, on the flight screen, ends it at once.</p>
+
+    <h2>Passport</h2>
+    <p>Every flight you follow lands in Passport when it reaches the gate. Passport opens on a turning globe with the year's routes drawn in gold; drag to turn it. Below it: the kilometres and how many times around Earth, the flights, the hours in the air and the airports, flights per month, how many arrived on time (within 15 minutes of the timetable), and the list of flights. With more than one year, tap a year to switch.</p>
+
+    <h2>On the home screen and in Quick Settings</h2>
+    <dl class="rows plate">
+      <div><dt>Next flight widget</dt><dd>The countdown, gate and status of your next flight.</dd></div>
+      <div><dt>Boarding pass tile</dt><dd>A Quick Settings tile with your next pass, one tap away.</dd></div>
+      <div><dt>Shortcuts</dt><dd>Touch and hold the Steward icon for Boarding pass, Share ETA and Add flight.</dd></div>
+    </dl>
+
+    <h2>Settings</h2>
+    <p>Settings is the third tab: cards of rows, in this order.</p>
+    <dl class="rows plate">
+      <div><dt>Ready for your trips</dt><dd>The things that let Steward reach you on time, each with a tick when on and a Fix button when off: Notifications, Live updates on the lock screen (Android 16 and newer), Exact timing (Android 12 and newer) and Pass on the lock screen.</dd></div>
+      <div><dt>Tell me about</dt><dd>A switch for each alert: Check in, Time to leave for the airport, Boarding with your pass, Gate and terminal changes, Delays, My plane running late, Take off and landing, Bag belt on arrival, and Live update on the lock screen. Then Time to the airport, Be at the airport, and From where I am.</dd></div>
+      <div><dt>Boarding pass</dt><dd>Show the pass on the lock screen.</dd></div>
+      <div><dt>Finding flights</dt><dd>Look in my calendar, and Keep flights in my calendar, which writes each flight with its latest times, terminal and gate. Gmail's own event keeps the booked times.</dd></div>
+      <div><dt>How it looks</dt><dd>Match the phone, Dark or Light, and Sky colours, a faint tint of the hour at the departure airport.</dd></div>
+      <div><dt>Your plan</dt><dd>Your plan with when it renews or ends and the phones on it, Change, Manage subscription, and Restore purchase. Without a plan: Start your subscription.</dd></div>
+      <div><dt>Your data</dt><dd>Download my data, a copy of what Steward's server keeps about this phone, and Delete my data.</dd></div>
+      <div><dt>Help</dt><dd>Write to me: a question, a bug or an idea, by email.</dd></div>
+      <div><dt>About</dt><dd>The privacy policy and the terms.</dd></div>
+    </dl>
+
+    <h2>The subscription</h2>
+    <p>Steward is free to download, and using it needs a subscription. Every plan has every feature; plans differ only in how many phones they cover.</p>
+    <dl class="rows plate">
+      <div><dt>Steward</dt><dd>For 2 phones. 4.99 a month or 29.99 a year.</dd></div>
+      <div><dt>Pro</dt><dd>Up to 10 phones. 9.99 a month or 59.99 a year.</dd></div>
+      <div><dt>Unlimited</dt><dd>Every phone you have. 19.99 a month or 99.99 a year. Meant for personal and family use, about 200 trips followed at once.</dd></div>
+    </dl>
+    <p style="margin-top:12px">Prices are the listed ones in US dollars; Google Play shows your own price before you pay. New subscribers get 3 days free, one trial per Google account. After the trial the subscription starts unless you cancel in Google Play before it ends. A phone you have not opened Steward on for 30 days frees its place on your plan. If the subscription ends, your trips stay in the app as a read only list.</p>
+
+    <h2>Privacy</h2>
+    <p>No ads, no tracking, no analytics and no sign in. To watch a flight, Steward sends its server the flight number, the day and the seat you added, and a push token so alerts can reach your phone. Your calendar is read on the phone, and only the flight number and day of a flight you add leave it. Boarding passes stay on your phone. From where I am uses a rough location on the day of travel, kept on this phone. The full <a href="https://steward.zanoski.com/privacy">privacy policy</a> says what is kept and for how long.</p>
+
+    <h2>Accessibility</h2>
+    <p>Light and dark looks, big text and TalkBack labels. Buttons are at least 48 dp, and travel day mode reads as one sentence with TalkBack.</p>
+    </div>
+
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Steward by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer"><a href="https://steward.zanoski.com">Home</a><a href="index.html">User guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a><a href="https://steward.zanoski.com/privacy">Privacy</a><a href="https://steward.zanoski.com/delete">Delete data</a><a href="https://steward.zanoski.com/terms">Terms</a></nav>
+    <p class="lic">Guide text and images are shared under CC BY 4.0. The Steward app itself is proprietary.</p>
+  </div>
+</footer>
+</body>
+</html>

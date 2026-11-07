@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/steward-app/
+    about: Flights, the live update, alerts, the boarding pass, Passport, the subscription, fixes and answers to common questions.
+  - name: steward.zanoski.com
+    url: https://steward.zanoski.com
+    about: The Steward website, with the privacy policy, data deletion and the terms.

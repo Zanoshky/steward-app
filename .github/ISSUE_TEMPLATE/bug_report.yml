@@ -1,0 +1,117 @@
+name: Bug report
+description: Something in Steward does not work, looks wrong or crashes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One problem per report, please.
+        Before you attach a screenshot, crop or cover anything private: your name, your seat, the barcode of a boarding pass and booking codes. Issues here are public.
+        No GitHub account, or something private? Write to marko@zanoski.com instead.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "Android settings, Apps, Steward."
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      description: Android settings, About phone.
+      placeholder: Pixel 8
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: Android settings, About phone, Android version.
+      placeholder: "16"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen?"
+      options:
+        - "flights (home, next trips, travel day)"
+        - "add flight (flight number and day)"
+        - "found in your calendar"
+        - "share a booking to steward"
+        - "read a boarding pass (screenshot, pdf, wallet pass)"
+        - "flight screen (map, timeline, times)"
+        - "your plane (delay risk)"
+        - "connections"
+        - "boarding pass screen"
+        - "pass on the lock screen"
+        - "live update on the lock screen"
+        - "status bar chip"
+        - "alerts (gate, delay, take off, landing, belt)"
+        - "reminders (check in, leave, boarding)"
+        - "cancelled or diverted flight"
+        - "share eta and the live link"
+        - "passport and the globe"
+        - "next flight widget"
+        - "boarding pass tile (quick settings)"
+        - "app shortcuts"
+        - "settings: ready for your trips"
+        - "settings: tell me about"
+        - "settings: time to the airport, from where i am"
+        - "settings: boarding pass"
+        - "settings: finding flights (calendar)"
+        - "settings: how it looks"
+        - "plans page and the trial"
+        - "settings: your plan, restore purchase"
+        - "settings: your data (download, delete)"
+        - "settings: help, write to me"
+        - "accessibility (talkback, text size)"
+        - "other"
+    validations:
+      required: true
+  - type: input
+    id: flight
+    attributes:
+      label: Flight number and day
+      description: If the bug is about one flight. Leave out your seat and booking code.
+      placeholder: OU 410 on 12 Nov
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, one step per line.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag the file in here. A short recording helps a lot with the live update and alerts.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this is not there yet.
+          required: true
+        - label: My screenshots show nothing private.
+          required: true
