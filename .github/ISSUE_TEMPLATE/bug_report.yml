@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for taking the time. One problem per report, please.
         Before you attach a screenshot, crop or cover anything private: your name, your seat, the barcode of a boarding pass and booking codes. Issues here are public.
-        No GitHub account, or something private? Write to marko@zanoski.com instead.
+        No GitHub account, or something private? Write to support@zanoski.com instead.
   - type: input
     id: version
     attributes:

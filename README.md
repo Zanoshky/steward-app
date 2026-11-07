@@ -52,7 +52,7 @@ The guide pages are plain HTML in [docs](docs), built by `python3 build.py`.
 2. Otherwise open a [bug report](https://github.com/Zanoshky/steward-app/issues/new?template=bug_report.yml) or a [feature request](https://github.com/Zanoshky/steward-app/issues/new?template=feature_request.yml).
 3. Add your app version, phone model and Android version, and a screenshot if you can. Crop out anything private first, like your name, seat and boarding pass barcode: issues are public.
 
-Prefer email? Write to marko@zanoski.com.
+Prefer email? Write to support@zanoski.com.
 
 ## License
 
