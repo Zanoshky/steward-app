@@ -148,7 +148,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Its buttons are Boarding pass (Show pass from boarding time, when a pass is kept), Share ETA, or Next flight when you have a connection, and Unpin. Unpin or a swipe hides it for that flight; Show the live update again, on the flight screen, brings it back.</p>
 
     <h2>Alerts</h2>
-    <p>Gate and terminal changes, delays of 15 minutes or more, take off and landing with the arrival gate, the bag belt, and your plane running late. Reminders tell you when to check in, when to leave for the airport, and when boarding starts. Settings, Tell me about, groups them into four switches. Cancellations and diversions always come through; a cancelled flight shows the other nonstop flights on the route in the next day, ready to follow.</p>
+    <p>Gate and terminal changes, delays of 15 minutes or more, take off and landing with the arrival gate, the bag belt, and your plane running late. Reminders tell you when to check in, when to leave for the airport, and when boarding starts. Settings, Alerts, groups them into four switches. Cancellations and diversions always come through; a cancelled flight shows the other nonstop flights on the route in the next day, ready to follow.</p>
 
     <h2>The boarding pass</h2>
     <p>Open Boarding pass on a flight and add the PDF or Wallet pass from the airline email, or a screenshot from the airline app. Steward reads the barcode and draws it again, sharp and at full brightness. The pass stays on this phone. With several legs, swipe for the others. Add to home screen makes a shortcut to your next pass.</p>
@@ -168,19 +168,23 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     </dl>
 
     <h2>Settings</h2>
-    <p>Settings is the third tab: cards of rows, in this order.</p>
+    <p>Settings is the third tab: one list of short rows, each opening its own page. Back returns to the list where you left it.</p>
     <dl class="rows plate">
-      <div><dt>Ready for your trips</dt><dd>The things that let Steward reach you on time, each with a tick when on and a Fix button when off: Notifications, Live updates on the lock screen (Android 16 and newer), Exact timing (Android 12 and newer) and Pass on the lock screen.</dd></div>
-      <div><dt>Tell me about</dt><dd>Four switches: Before you fly (check in, when to leave, boarding with your pass), Changes to your flight (a new gate, delays of 15 minutes or more, a late plane), Take off and landing (with the arrival gate and your bag belt), and Live on the lock screen. Cancellations and diversions always reach you. Then Time to the airport, Be at the airport, and From where I am.</dd></div>
-      <div><dt>Boarding pass</dt><dd>Show the pass on the lock screen.</dd></div>
-      <div><dt>Finding flights</dt><dd>Look in my calendar, and Keep flights in my calendar, which writes each flight with its latest times, terminal and gate. Gmail's own event keeps the booked times.</dd></div>
-      <div><dt>How it looks</dt><dd>Match the phone, Dark or Light, and Sky colours, a faint tint of the hour at the departure airport.</dd></div>
-      <div><dt>Units</dt><dd>Temperature in °C or °F, for the weather where you land, and Distance in km or mi, on each flight and in Passport. Both start from your phone's region.</dd></div>
-      <div><dt>Your plan</dt><dd>Your plan with when it renews or ends and the phones on it, Change, Manage subscription, and Restore purchase. Without a plan: Start your subscription.</dd></div>
-      <div><dt>Your data</dt><dd>Download my data, a copy of what Steward's server keeps about this phone, and Delete my data.</dd></div>
-      <div><dt>Help</dt><dd>User guide, this guide. Report a bug or ask for a feature, on GitHub. Write to me: a question, a bug or an idea, by email.</dd></div>
-      <div><dt>About</dt><dd>Privacy policy, Terms, and Weather data, which names where the weather comes from.</dd></div>
+      <div><dt>Needs a fix</dt><dd>Shows only when Android holds something back, each with a Fix button: Notifications, Live updates on the lock screen (Android 16 and newer) and Exact timing (Android 12 and newer). When all is on, the list starts with Look.</dd></div>
+      <div><dt>Look</dt><dd>Match the phone, Dark or Light, and Sky colours, a faint tint of the hour on home. Dark is a calm graphite, with blue kept for what you can tap.</dd></div>
+      <div><dt>Your trips: Alerts</dt><dd>Four switches: Before you fly (check in, when to leave, boarding with your pass), Changes to your flight (a new gate, delays of 15 minutes or more, a late plane), Take off and landing (with the arrival gate and your bag belt), and Live on the lock screen. Cancellations and diversions always reach you.</dd></div>
+      <div><dt>Your trips: Leaving for the airport</dt><dd>Time to the airport, Be at the airport, and From where I am, a rough location on the day of travel that stays on the phone.</dd></div>
+      <div><dt>Your trips: Boarding pass</dt><dd>Show on the lock screen: at the airport, without unlocking.</dd></div>
+      <div><dt>Your trips: Calendar</dt><dd>Look in my calendar, and Keep flights in my calendar, which writes each flight with its latest times, terminal and gate. Gmail's own event keeps the booked times.</dd></div>
+      <div><dt>Your trips: Units</dt><dd>Temperature in °C or °F, for the weather where you land, and Distance in km or mi, on each flight and in Passport. Both start from your phone's region.</dd></div>
+      <div><dt>Privacy</dt><dd>Promises, permissions and your data: what Steward never does, every permission it holds and why, then Download my data and Delete my data.</dd></div>
+      <div><dt>Plan</dt><dd>Your plan with when it renews or ends and the phones on it, Change, Manage subscription and Restore purchase. Without a plan: Start your subscription, and Access code for a code from Steward support.</dd></div>
+      <div><dt>Help</dt><dd>User guide, this guide. Report a bug or ask for a feature, on GitHub. Privacy policy.</dd></div>
+      <div><dt>About</dt><dd>The version, Terms, and where the weather and the aircraft photos come from.</dd></div>
     </dl>
+
+    <h2>Without a connection</h2>
+    <p>Everything Steward last heard stays on the phone: your flights, gates, times, the boarding pass, your plane and the weather where you land. When the phone is offline, or Steward cannot reach its server, a red note stays at the top of every screen with times, saying since when: "No connection since 14:05. Check the airport screens." It goes away by itself once Steward hears from its server again.</p>
 
     <h2>The subscription</h2>
     <p>Steward is free to download, and using it needs a subscription. Every plan has every feature; plans differ only in how many phones they cover.</p>
@@ -209,7 +213,7 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Tap the round add button in the bar.</li><li>Pick the day from the chips above the box, or Later for another day.</li><li>Type the flight number, like OU 410, and search.</li><li>Tap the flight to follow it.</li></ol>
 
     <h2>Add the flights in your calendar</h2>
-    <ol><li>Settings, Finding flights, turn on Look in my calendar, and allow the calendar.</li><li>Open Flights. Under Found in your calendar, tap Add, or Not mine.</li></ol>
+    <ol><li>Settings, Calendar, turn on Look in my calendar, and allow the calendar.</li><li>Open Flights. Under Found in your calendar, tap Add, or Not mine.</li></ol>
 
     <h2>Add a trip from the booking email</h2>
     <ol><li>Open the booking email in Gmail or the trip in the airline app.</li><li>Tap Share and pick Steward.</li><li>Steward lists the flights it found. Add the ones you take.</li></ol>
@@ -218,7 +222,7 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Open the flight, then Pass.</li><li>Pick A screenshot, or A PDF or Wallet pass.</li><li>The pass is kept with that flight, with its seat.</li></ol>
 
     <h2>Have the pass open over the lock screen</h2>
-    <ol><li>Settings, Boarding pass, turn on Show the pass on the lock screen.</li><li>From boarding time, tap the live update on the lock screen. Only the pass shows.</li></ol>
+    <ol><li>Settings, Boarding pass, turn on Show on the lock screen.</li><li>From boarding time, tap the live update on the lock screen. Only the pass shows.</li></ol>
 
     <h2>Put your boarding pass in Quick Settings</h2>
     <ol><li>Keep your first boarding pass. On Android 13 and newer, Steward offers the tile once: tap Add.</li><li>Missed it? Edit your Quick Settings tiles and drag in Boarding pass. It shows your next pass, one tap away.</li></ol>
@@ -227,7 +231,7 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Open the flight and tap Share.</li><li>Pick the app to send it with, or Copy live link.</li><li>To end it early: the flight, then Stop sharing the live link.</li></ol>
 
     <h2>Know when to leave for the airport</h2>
-    <ol><li>Settings, Tell me about, set Time to the airport and Be at the airport.</li><li>For a guess from where you are on the day, turn on From where I am. The longer time wins.</li></ol>
+    <ol><li>Settings, Leaving for the airport, set Time to the airport and Be at the airport.</li><li>For a guess from where you are on the day, turn on From where I am. The longer time wins.</li></ol>
 
     <h2>Switch to miles or Fahrenheit</h2>
     <ol><li>Settings, Units.</li><li>Tap °C or °F for Temperature, and km or mi for Distance. Every distance in the app follows it.</li></ol>
@@ -239,7 +243,7 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Open the flight and tap the Aircraft row. Or tap My plane, then the plane row.</li><li>The photo shows with the photographer's name. Tap the credit to open the photo page on Planespotters.net.</li></ol>
 
     <h2>Keep flights in your calendar</h2>
-    <ol><li>Settings, Finding flights, turn on Keep flights in my calendar, and allow the calendar.</li><li>Each flight is written with its latest times, terminal and gate. Turn it off and every event Steward wrote is removed.</li></ol>
+    <ol><li>Settings, Calendar, turn on Keep flights in my calendar, and allow the calendar.</li><li>Each flight is written with its latest times, terminal and gate. Turn it off and every event Steward wrote is removed.</li></ol>
 
     <h2>Bring back the live update</h2>
     <ol><li>Open the flight.</li><li>Tap Show the live update again.</li></ol>
@@ -257,10 +261,10 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Install Steward on the other phone, signed in to Google Play with the account that bought the plan.</li><li>Settings, Your plan, Restore purchase.</li></ol>
 
     <h2>Get a copy of your data</h2>
-    <ol><li>Settings, Your data, Download my data.</li><li>Pick where to save the file. It is a JSON file.</li></ol>
+    <ol><li>Settings, Promises, permissions and your data, Download my data.</li><li>Pick where to save the file. It is a JSON file.</li></ol>
 
     <h2>Delete your data</h2>
-    <ol><li>Settings, Your data, Delete my data.</li><li>Tap Delete. Steward erases this phone from its server, removes the calendar events it wrote, clears the phone and closes.</li><li>This does not cancel your subscription. Cancel it in Google Play.</li></ol>
+    <ol><li>Settings, Promises, permissions and your data, Delete my data.</li><li>Tap Delete. Steward erases this phone from its server, removes the calendar events it wrote, clears the phone and closes.</li><li>This does not cancel your subscription. Cancel it in Google Play.</li></ol>
     </div>
 """)
 
@@ -268,31 +272,31 @@ page("runbook.html", "Runbook", "When something in Steward goes wrong: alerts no
     <div class="doc">
     <p class="lbl">Runbook</p>
     <h1>When something goes wrong</h1>
-    <p>What you see, why it happens, and the taps that fix it. Most fixes start in Settings, Ready for your trips: anything with a Fix button there is off. More answers are in the <a href="faq.html">questions</a>.</p>
+    <p>What you see, why it happens, and the taps that fix it. Most fixes start at the top of Settings: when Android holds something back, a Needs a fix card shows it with a Fix button. More answers are in the <a href="faq.html">questions</a>.</p>
 
     <h2>Alerts do not arrive</h2>
     <p>Notifications are off, an alert switch is off, the subscription has ended, or the news was already known when you added the flight.</p>
-    <ol><li>Settings, Ready for your trips. If Notifications says Off, tap Fix and allow them.</li><li>In Android's notification settings for Steward, check that Gate, delay and cancellation, Take off, landing and bags, and Check in, leave and boarding are not off or silent.</li><li>Settings, Tell me about: check the switch for that kind of alert.</li><li>Settings, Your plan. Without a live subscription Steward gets no alerts at all, cancellations included.</li><li>A gate already given when you added the flight is not sent again; only a change is. A second alert of the same kind replaces the first.</li></ol>
+    <ol><li>Settings: if a Needs a fix card shows Notifications, tap Fix and allow them.</li><li>In Android's notification settings for Steward, check that Gate, delay and cancellation, Take off, landing and bags, and Check in, leave and boarding are not off or silent.</li><li>Settings, Alerts: check the switch for that kind of alert.</li><li>Settings, Your plan. Without a live subscription Steward gets no alerts at all, cancellations included.</li><li>A gate already given when you added the flight is not sent again; only a change is. A second alert of the same kind replaces the first.</li></ol>
 
     <h2>The live update is not on the lock screen</h2>
     <p>It starts two hours before departure, for one flight at a time. It may be switched off, unpinned for that flight, or not allowed to sit on the lock screen.</p>
-    <ol><li>Settings, Tell me about: turn on Live on the lock screen.</li><li>On Android 16 and newer, Settings, Ready for your trips: if it says Live updates are off for Steward, tap Fix and allow it.</li><li>If you unpinned or swiped it away, open the flight and tap Show the live update again.</li><li>Check that the phone's lock screen shows notifications.</li></ol>
+    <ol><li>Settings, Alerts: turn on Live on the lock screen.</li><li>On Android 16 and newer, Settings, Needs a fix: if it says Live updates are off for Steward, tap Fix and allow it.</li><li>If you unpinned or swiped it away, open the flight and tap Show the live update again.</li><li>Check that the phone's lock screen shows notifications.</li></ol>
 
     <h2>Leave now or boarding came a few minutes late</h2>
     <p>Exact timing is off, so Android may hold the reminder back while the phone sleeps.</p>
-    <ol><li>Settings, Ready for your trips, Exact timing, Fix.</li><li>Allow Alarms and reminders for Steward, then come back.</li></ol>
+    <ol><li>Settings: in the Needs a fix card, tap Fix on Exact timing.</li><li>Allow Alarms and reminders for Steward, then come back.</li></ol>
 
     <h2>The pass asks me to unlock first</h2>
-    <p>Show the pass on the lock screen is off.</p>
-    <ol><li>Settings, Ready for your trips, Pass on the lock screen, Fix. Or Settings, Boarding pass, turn on Show the pass on the lock screen.</li></ol>
+    <p>Show on the lock screen is off.</p>
+    <ol><li>Settings, Boarding pass, turn on Show on the lock screen.</li></ol>
 
     <h2>The calendar finds nothing</h2>
     <p>Steward reads only flights that Gmail put into Google Calendar, from today on, and only with your OK.</p>
-    <ol><li>Settings, Finding flights, turn on Look in my calendar, and allow the calendar.</li><li>In Google Calendar's settings, turn on Events from Gmail.</li><li>If Android no longer asks, Steward opens its app settings: allow Calendar there.</li><li>Or add the flight by its number.</li></ol>
+    <ol><li>Settings, Calendar, turn on Look in my calendar, and allow the calendar.</li><li>In Google Calendar's settings, turn on Events from Gmail.</li><li>If Android no longer asks, Steward opens its app settings: allow Calendar there.</li><li>Or add the flight by its number.</li></ol>
 
     <h2>The calendar found the wrong flight</h2>
     <p>The flight number or day in the event did not match your trip.</p>
-    <ol><li>Tap Not mine to hide it. It stays hidden for good.</li><li>Add the right flight by its number with the local departure day.</li><li>To stop calendar finds, Settings, Finding flights, turn off Look in my calendar.</li></ol>
+    <ol><li>Tap Not mine to hide it. It stays hidden for good.</li><li>Add the right flight by its number with the local departure day.</li><li>To stop calendar finds, Settings, Calendar, turn off Look in my calendar.</li></ol>
 
     <h2>A boarding pass will not read</h2>
     <p>Steward could not find the barcode, or the pass is for another flight.</p>
@@ -333,9 +337,17 @@ page("runbook.html", "Runbook", "When something in Steward goes wrong: alerts no
     <p>The widget redraws on alerts, syncs and the system's widget period, so it can lag while the phone sleeps.</p>
     <ol><li>Open Steward once.</li><li>Still wrong? Remove the widget and add it again.</li></ol>
 
+    <h2>My access code does not work</h2>
+    <p>Codes come from Steward support, for example for a review or after a problem. Each code works for a set number of phones and days.</p>
+    <ol><li>Settings, Your plan, Access code. Type the code with or without the dashes; letters can be small or capital.</li><li>"That code is not right": check each letter. Codes never use 0, O, 1, I or L.</li><li>"Used up or has ended": write to support@zanoski.com for a new one.</li><li>"Already has a subscription": this phone pays already, so it needs no code.</li></ol>
+
+    <h2>A red note says No connection</h2>
+    <p>The phone is offline, or Steward cannot reach its server. What it last heard stays on screen, with the time it heard it.</p>
+    <ol><li>Check Wi-Fi or mobile data. Airport Wi-Fi often needs its sign in page first: open a browser.</li><li>Roaming off abroad: turn on roaming for data, or join Wi-Fi.</li><li>The note goes by itself once Steward hears from its server. Until then, check the airport screens for the gate.</li></ol>
+
     <h2>Delete my data</h2>
     <p>Steward has no account; what its server keeps belongs to the phone the app is on.</p>
-    <ol><li>Settings, Your data, Download my data first if you want a copy.</li><li>Settings, Your data, Delete my data, Delete.</li><li>Already uninstalled? Read <a href="{SITE}/delete">{SITE.removeprefix("https://")}/delete</a>, or write to <span class="mail">{MAIL}</span> with the number and day of a flight you followed.</li><li>Deleting data does not cancel the subscription. Cancel it in Google Play.</li></ol>
+    <ol><li>Settings, Promises, permissions and your data, Download my data first if you want a copy.</li><li>Settings, Promises, permissions and your data, Delete my data, Delete.</li><li>Already uninstalled? Read <a href="{SITE}/delete">{SITE.removeprefix("https://")}/delete</a>, or write to <span class="mail">{MAIL}</span> with the number and day of a flight you followed.</li><li>Deleting data does not cancel the subscription. Cancel it in Google Play.</li></ol>
     </div>
 """)
 
@@ -390,7 +402,7 @@ page("faq.html", "Questions", "Answers to common questions about Steward: the su
     <p>Google Play takes the payment, so refunds follow Google Play's rules. The <a href="runbook.html">runbook</a> has the steps.</p>
 
     <h2>How do I delete my data?</h2>
-    <p>Settings, Your data, Delete my data. Without the app, read <a href="{SITE}/delete">the deletion page</a>.</p>
+    <p>Settings, Promises, permissions and your data, Delete my data. Without the app, read <a href="{SITE}/delete">the deletion page</a>.</p>
     </div>
 """)
 
