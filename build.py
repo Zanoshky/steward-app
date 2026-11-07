@@ -11,7 +11,7 @@ D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/steward-app"
 PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.steward"
 SITE = "https://steward.zanoski.com"
-MAIL = "marko@zanoski.com"
+MAIL = "support@zanoski.com"
 SUBS = "https://play.google.com/store/account/subscriptions"
 NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("cookbook.html", "Cookbook"), ("runbook.html", "Runbook"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
 
