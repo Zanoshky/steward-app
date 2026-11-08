@@ -92,11 +92,11 @@ page("index.html", "Home", "The user guide for Steward, the flight tracker for A
       </dl>
 
       <h2>Plans</h2>
-      <p>Every plan has every feature. Plans differ only in how many phones they cover. Each is monthly or yearly, with 3 days free from Google Play for new subscribers.</p>
+      <p>Every plan has every feature and covers every phone you have. Plans differ only in how many flights you follow a month. Each is monthly or yearly, with 3 days free from Google Play for new subscribers.</p>
       <dl class="rows plate">
-        <div><dt>Steward</dt><dd>For 2 phones. 4.99 a month or 29.99 a year.</dd></div>
-        <div><dt>Pro</dt><dd>Up to 10 phones. 9.99 a month or 59.99 a year.</dd></div>
-        <div><dt>Unlimited</dt><dd>Every phone you have. 19.99 a month or 99.99 a year.</dd></div>
+        <div><dt>Steward</dt><dd>10 flights a month. 4.99 a month or 29.99 a year.</dd></div>
+        <div><dt>Pro</dt><dd>30 flights a month. 9.99 a month or 59.99 a year.</dd></div>
+        <div><dt>Unlimited</dt><dd>Unlimited flights. 19.99 a month or 99.99 a year.</dd></div>
       </dl>
       <p style="margin-top:12px">These are the listed prices in US dollars. Google Play shows your own price, in your money and with tax, before you pay.</p>
     </div>
@@ -178,7 +178,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
       <div><dt>Your trips: Calendar</dt><dd>Look in my calendar, and Keep flights in my calendar, which writes each flight with its latest times, terminal and gate. Gmail's own event keeps the booked times.</dd></div>
       <div><dt>Your trips: Units</dt><dd>Temperature in °C or °F, for the weather where you land, and Distance in km or mi, on each flight and in Passport. Both start from your phone's region.</dd></div>
       <div><dt>Privacy</dt><dd>Promises, permissions and your data: what Steward never does, every permission it holds and why, then Download my data and Delete my data.</dd></div>
-      <div><dt>Plan</dt><dd>Your plan with when it renews or ends and the phones on it, Change, Manage subscription and Restore purchase. Without a plan: Start your subscription, and Access code for a code from Steward support.</dd></div>
+      <div><dt>Plan</dt><dd>Your plan with when it renews or ends and the flights left this month, Change, 10 more flights, Manage subscription and Restore purchase. Without a plan: Start your subscription, and Access code for a code from Steward support.</dd></div>
       <div><dt>Help</dt><dd>User guide, this guide. Report a bug or ask for a feature, on GitHub. Privacy policy.</dd></div>
       <div><dt>About</dt><dd>The version, Terms, and where the weather and the aircraft photos come from.</dd></div>
     </dl>
@@ -187,13 +187,13 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Everything Steward last heard stays on the phone: your flights, gates, times, the boarding pass, your plane and the weather where you land. When the phone is offline, or Steward cannot reach its server, a red note stays at the top of every screen with times, saying since when: "No connection since 14:05. Check the airport screens." It goes away by itself once Steward hears from its server again.</p>
 
     <h2>The subscription</h2>
-    <p>Steward is free to download, and using it needs a subscription. Every plan has every feature; plans differ only in how many phones they cover.</p>
+    <p>Steward is free to download, and using it needs a subscription. Every plan has every feature and covers every phone you have; plans differ only in how many flights you follow a month.</p>
     <dl class="rows plate">
-      <div><dt>Steward</dt><dd>For 2 phones. 4.99 a month or 29.99 a year.</dd></div>
-      <div><dt>Pro</dt><dd>Up to 10 phones. 9.99 a month or 59.99 a year.</dd></div>
-      <div><dt>Unlimited</dt><dd>Every phone you have. 19.99 a month or 99.99 a year. Meant for personal and family use, about 200 trips followed at once.</dd></div>
+      <div><dt>Steward</dt><dd>10 flights a month. 4.99 a month or 29.99 a year.</dd></div>
+      <div><dt>Pro</dt><dd>30 flights a month. 9.99 a month or 59.99 a year.</dd></div>
+      <div><dt>Unlimited</dt><dd>Unlimited flights. 19.99 a month or 99.99 a year. Meant for personal and family use, about 200 trips followed at once.</dd></div>
     </dl>
-    <p style="margin-top:12px">Prices are the listed ones in US dollars; Google Play shows your own price before you pay. New subscribers get 3 days free, one trial per Google account. After the trial the subscription starts unless you cancel in Google Play before it ends. A phone you have not opened Steward on for 30 days frees its place on your plan. If the subscription ends, your trips stay in the app as a read only list.</p>
+    <p style="margin-top:12px">Prices are the listed ones in US dollars; Google Play shows your own price before you pay. New subscribers get 3 days free, one trial per Google account. After the trial the subscription starts unless you cancel in Google Play before it ends. A flight counts when you follow it. A connection on the same trip is free (a flight leaving from where your last one landed, within 24 hours), and so is a flight another of your phones already follows. A flight removed within an hour is given back, and the count starts again on the 1st. On Steward and Pro, 10 more flights cost 1.99 and never run out. If the subscription ends, your trips stay in the app as a read only list.</p>
 
     <h2>Privacy</h2>
     <p>No ads, no tracking, no analytics and no sign in. To watch a flight, Steward sends its server the flight number, the day and the seat you added, and a push token so alerts can reach your phone. Your calendar is read on the phone, and only the flight number and day of a flight you add leave it. Boarding passes stay on your phone. From where I am uses a rough location on the day of travel, kept on this phone. A plane photo is looked up by the plane's registration only, and only when you open it. The full <a href="{SITE}/privacy">privacy policy</a> says what is kept and for how long.</p>
@@ -314,9 +314,9 @@ page("runbook.html", "Runbook", "When something in Steward goes wrong: alerts no
     <p>The Google account on this phone has no Steward plan. A plan bought with another account restores from that account.</p>
     <ol><li>Switch the Play Store to the account that bought it, then Restore purchase again.</li></ol>
 
-    <h2>It says all the phones on my plan are in use</h2>
-    <p>Steward covers 2 phones, Pro up to 10, Unlimited any number.</p>
-    <ol><li>Tap Move up to the next plan on the plans page.</li><li>Or wait: a phone that has not opened Steward for 30 days frees its place.</li></ol>
+    <h2>It says this month's flights are used</h2>
+    <p>Steward follows 10 new flights a month, Pro 30, Unlimited with no count. Connections on the same trip, and flights another of your phones already follows, are free.</p>
+    <ol><li>Tap 10 more flights for 1.99; pack flights never run out.</li><li>Or tap See plans and move up a plan.</li><li>Or wait for the 1st, when the count starts again. A flight you removed within an hour was already given back.</li></ol>
 
     <h2>The subscription will not start</h2>
     <p>Google Play is not set up on this phone, not reachable, or the phone is offline.</p>
@@ -351,7 +351,7 @@ page("runbook.html", "Runbook", "When something in Steward goes wrong: alerts no
     </div>
 """)
 
-page("faq.html", "Questions", "Answers to common questions about Steward: the subscription and trial, phones per plan, privacy, the calendar, boarding passes and the live update.", f"""
+page("faq.html", "Questions", "Answers to common questions about Steward: the subscription and trial, flights per plan, privacy, the calendar, boarding passes and the live update.", f"""
     <div class="doc">
     <p class="lbl">Questions</p>
     <h1>Questions and fixes</h1>
@@ -363,7 +363,13 @@ page("faq.html", "Questions", "Answers to common questions about Steward: the su
     <p>New subscribers get 3 days free through Google Play, one trial per Google account. If you do not cancel in Google Play before the 3 days end, the subscription starts and Google Play charges you.</p>
 
     <h2>What is the difference between the plans?</h2>
-    <p>Only the number of phones. Steward covers 2 phones, Pro up to 10, and Unlimited every phone you have. Every plan has every feature.</p>
+    <p>Only how many flights you follow a month: Steward 10, Pro 30, Unlimited with no count. Every plan has every feature and covers every phone you have.</p>
+
+    <h2>What counts as a flight?</h2>
+    <p>Each new flight you follow counts once. A connection on the same trip is free: a flight leaving from the airport where your last one landed, within 24 hours, that does not fly back to where that one left from. A flight another of your phones already follows is free too. Remove a flight within an hour and it is given back. The count starts again on the 1st of each month.</p>
+
+    <h2>What if I run out in a busy month?</h2>
+    <p>On Steward and Pro, tap 10 more flights for 1.99. They are used only after the month's flights, and never run out. Or move up a plan.</p>
 
     <h2>Does Steward track trains?</h2>
     <p>Not in this version. Steward follows flights.</p>
