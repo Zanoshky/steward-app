@@ -199,7 +199,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Everything Steward last heard stays on the phone: your flights, gates, times, the boarding pass, your plane and the weather where you land. When the phone is offline, or Steward cannot reach its server, a red note stays at the top of every screen with times, saying since when: "No connection since 14:05. Check the airport screens." It goes away by itself once Steward hears from its server again.</p>
 
     <h2>The subscription</h2>
-    <p>Steward is free to download, and using it needs a subscription; a new phone may get a few flights free first. Every plan has every feature and covers every phone you have; plans differ only in how many flights you follow a month.</p>
+    <p>Steward is free to download, and using it needs a subscription. Every plan has every feature and covers every phone you have; plans differ only in how many flights you follow a month.</p>
     <dl class="rows plate">
       <div><dt>Steward</dt><dd>10 flights a month. 4.99 a month or 29.99 a year.</dd></div>
       <div><dt>Pro</dt><dd>30 flights a month. 9.99 a month or 59.99 a year.</dd></div>
@@ -382,8 +382,6 @@ page("faq.html", "Questions", "Answers to common questions about Steward: the su
     <h2>Why is there no free version?</h2>
     <p>Every trip you follow is watched live by a paid flight data service, around the clock. So Steward is free to download, using it needs a subscription, and there are no ads.</p>
 
-    <h2>Are there free flights?</h2>
-    <p>When we offer them, a new phone gets its first few flights free, with every feature. Home and Settings, Your plan show how many are left. They are given once per phone, also after a reinstall or Delete my data, and a free flight is watched until it lands. Once they are used, a plan keeps Steward watching your trips, starting with the free trial.</p>
     <h2>How does the free trial work?</h2>
     <p>New subscribers get 3 days free through Google Play, one trial per Google account. If you do not cancel in Google Play before the 3 days end, the subscription starts and Google Play charges you.</p>
 
