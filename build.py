@@ -113,7 +113,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Steward asks for notifications, so alerts can reach you. Other asks come only when you turn on the thing that needs them: the calendar for Look in my calendar, and a rough location for From where I am.</p>
 
     <h2>One screen</h2>
-    <p>Steward is one screen: your flights, with the next one on top. A round add button sits at the foot for a new flight, and Settings is behind the gear. Read at the top, tap at the bottom: the big buttons sit in thumb reach.</p>
+    <p>Steward is one screen: your flights, with the next one on top. The plus adds a flight and the gear opens Settings.</p>
 
     <h2>Flights</h2>
     <p>Flights is the home screen, and it shows your next flight on one view: a slim card with the number, the route and the day (LH 400 | ZAG to LHR | Thu, Nov 19), one sentence about what happens next, and the whole day on one timeline. Swipe the card to move between flights. Tap the slim card to open the flight sheet: the photo of your plane, seat, aircraft and distance, Share, Directions and Stop following. A flight you just added opens here, with no screen of its own.</p>
