@@ -104,7 +104,7 @@ page("index.html", "Home", "The user guide for Steward, the flight tracker for A
     </div>
 """)
 
-page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the flight screen, connections, Your plane, the live update, alerts, the boarding pass, Share ETA, Passport, Settings and the subscription.", f"""
+page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the flight sheet, connections, Your plane, the live update, alerts, the boarding pass, Share ETA, Passport, Settings and the subscription.", f"""
     <div class="doc">
     <p class="lbl">Guide</p>
     <h1>How Steward works</h1>
@@ -134,20 +134,20 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
       <div><dt>A file from another app</dt><dd>A pass or booking another app shares or opens with Steward is listed first. Nothing is added, and no flight is counted, until you tap Add.</dd></div>
     </dl>
 
-    <h2>The flight screen</h2>
-    <p>Older versions opened each trip on its own screen. Today the flight sheet and the home screen carry all of it: the flight on a world map with the plane on its route, then the terminal, gate, seat and plane, a timeline with the planned times struck through, and words like 9m early. In the air it shows the altitude, the speed and the distance to go.</p>
+    <h2>The flight sheet</h2>
+    <p>Tap the slim card at the top of Flights. The sheet opens over the home screen, with the photo of your plane first when there is one, so there is no second screen to go back from.</p>
     <dl class="rows plate">
-      <div><dt>Before you fly</dt><dd>Pass, Share and My plane at the foot. When to leave for the airport, Directions to open your maps app, and about when the doors close.</dd></div>
-      <div><dt>My plane</dt><dd>Opens the Your plane screen, below.</dd></div>
-      <div><dt>A photo of your plane</dt><dd>Tap the Plane box or the Aircraft row to see a photo of that very plane from Planespotters.net, with the photographer's name and a link to the photo page. Before the airline names the plane, the same sheet says when it will.</dd></div>
-      <div><dt>After landing</dt><dd>Welcome to the city, the local time and your body clock, the bag belt, and Share arrival with Return flight, or Next pass when you have a connection.</dd></div>
-      <div><dt>Connections</dt><dd>When your next flight leaves from where this one lands, a Connecting flight card shows it, on Flights and on the flight screen. Tap it to open the next leg; on the flight screen Back walks you back leg by leg. When time is short the card says Tight connection, or You may miss it.</dd></div>
-      <div><dt>At the bottom</dt><dd>Show the live update again, Stop sharing the live link, and Stop following this flight (tap twice).</dd></div>
+      <div><dt>Seat, Aircraft, Distance</dt><dd>Three tiles of the same size. Tap Seat to set or change it. Tap Aircraft for the photo of that very plane from Planespotters.net, with the photographer's name and a link to the photo page; before the airline names the plane, the same sheet says when it will. Distance is for reading.</dd></div>
+      <div><dt>The plane before yours</dt><dd>From 25 hours out, a row shows where your plane is coming from. Tap it for Your plane, below.</dd></div>
+      <div><dt>Share, Directions, Stop following</dt><dd>Share opens Share ETA. Directions opens your maps app with the traffic right now. Stop following is red and asks once more in the sheet. Stop sharing the live link shows when a link is out and ends it at once.</dd></div>
+      <div><dt>On the home screen</dt><dd>Before you fly: when to leave for the airport, then boarding, take off and landing, each as a clock time on one timeline, with the weather where you land. After landing: the bag belt, and Share arrival with Return flight, or Next pass when you have a connection.</dd></div>
+      <div><dt>Connections</dt><dd>When your next flight leaves from where this one lands, a Connecting flight card shows it. Tap it to move to the next leg. When time is short the card says Tight connection, or You may miss it.</dd></div>
+      <div><dt>The live update</dt><dd>Show the live update again, on a flight opened from its alert, brings back a live update you swiped away.</dd></div>
     </dl>
     <p style="margin-top:12px">The details card ends with Local time at each airport. Boarding and doors are our estimate. The airline's time always wins.</p>
 
     <h2>Your plane</h2>
-    <p>Tap My plane on the flight screen. One screen, top to bottom:</p>
+    <p>Open the flight sheet and tap the row with the plane before yours. One screen, top to bottom:</p>
     <dl class="rows plate">
       <div><dt>How this flight usually does</dt><dd>How late the flight usually leaves and lands, and how often it was on time, 15 to 30 minutes, 30 to 60 minutes or over an hour late, from its flights in the last 90 days. With too few flights it says Not enough history for this flight yet.</dd></div>
       <div><dt>Your plane</dt><dd>The photo of the plane with its registration, then the type, the airline, its age, the seats and the engines. Airlines name the plane about a day before; until then Steward shows when it starts looking.</dd></div>
@@ -167,7 +167,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Passes are sealed on the phone with a key only this phone holds. The pass screen never shows in a screenshot, a screen recording or the recent apps picture.</p>
 
     <h2>Share ETA</h2>
-    <p>Share ETA sends a short message in the phone's language, written like a boarding card: the route and day, when it leaves and lands, the status (ON TIME, LATE, IN THE AIR, LANDED or CANCELLED) and a line that fills as the flight goes. Under it goes a live link to the people picking you up, with a card of the route, the times and the status that chats show as a preview. The page opens in any browser, with no app and no account. It says in one sentence where the flight is, draws the route with the plane on it, gives the gate and terminal and the arrival in the reader's own time, and keeps itself up to date. It shows the flight only, never your seat or your name, and it ends a few hours after you land. Tell them again when I land, in the share sheet, gives you a Send that I landed note on arrival. Stop sharing the live link, on the flight screen, ends it at once.</p>
+    <p>Share ETA sends a short message in the phone's language, written like a boarding card: the route and day, when it leaves and lands, the status (ON TIME, LATE, IN THE AIR, LANDED or CANCELLED) and a line that fills as the flight goes. Under it goes a live link to the people picking you up, with a card of the route, the times and the status that chats show as a preview. The page opens in any browser, with no app and no account. It says in one sentence where the flight is, draws the route with the plane on it, gives the gate and terminal and the arrival in the reader's own time, and keeps itself up to date. It shows the flight only, never your seat or your name, and it ends a few hours after you land. Tell them again when I land, in the share sheet, gives you a Send that I landed note on arrival. Stop sharing the live link, in the flight sheet, ends it at once.</p>
 
     <h2>Sky</h2>
     <p>Sky shows a turning globe with the flights people follow or look up with Steward, from a month before take off to a week after landing. A plane sits on each route that should be in the air now, placed by its times, so it is close, not exact. Under them, small dots are the airline flights in the air right now, heard by volunteers' ADS-B receivers (FlyItalyADSB, CC BY-SA 4.0, and adsb.lol, ODbL 1.0), each with a short wake that shows its heading; military aircraft and aircraft whose owners asked for privacy are left out. Pinch, double tap or use the zoom buttons to come in close; up close the dots turn into planes, and tapping one shows its flight, airline, aircraft, height and speed while the globe follows it. Below are how many are in the air, on the map and the airports, then the flights in the air, landing soonest first; tap one to turn the globe to it. It shows no flight numbers and nothing about who follows a flight, and looking needs no plan.</p>
@@ -243,7 +243,7 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Keep your first boarding pass. On Android 13 and newer, Steward offers the tile once: tap Add.</li><li>Missed it? Edit your Quick Settings tiles and drag in Boarding pass. It shows your next pass, one tap away.</li></ol>
 
     <h2>Share your ETA</h2>
-    <ol><li>Open the flight and tap Share.</li><li>Pick the app to send it with, or Copy live link. The chat shows a card of the flight, and the page follows it live in the reader's own time.</li><li>To end it early: the flight, then Stop sharing the live link.</li></ol>
+    <ol><li>Tap the slim card, then Share.</li><li>Pick the app to send it with, or Copy live link. The message reads like a boarding card in your language, the chat shows a picture of the flight, and the page follows it live in the reader's own time.</li><li>To end it early: the slim card, then Stop sharing the live link.</li></ol>
 
     <h2>Know when to leave for the airport</h2>
     <ol><li>Settings, Leaving for the airport, set Time to the airport and Be at the airport.</li><li>For a guess from where you are on the day, turn on From where I am. The longer time wins.</li></ol>
@@ -255,10 +255,10 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
     <ol><li>Add every leg of the trip, or share the booking or boarding pass so Steward adds them all.</li><li>Open the first flight. The Connecting flight card shows the next leg and how much time you have.</li><li>Tap the card to open the next leg. Back takes you to the leg before.</li><li>After you land, Next pass opens the boarding pass for the next leg.</li></ol>
 
     <h2>See how your flight usually does</h2>
-    <ol><li>Open the flight and tap My plane.</li><li>At the top: how late it usually leaves and lands. Below: your plane, and from 25 hours out the plane before yours.</li></ol>
+    <ol><li>Tap the slim card, then the row with the plane before yours.</li><li>At the top: how late it usually leaves and lands. Below: your plane, and from 25 hours out the plane before yours.</li></ol>
 
     <h2>See a photo of your plane</h2>
-    <ol><li>Open the flight and tap the Plane box or the Aircraft row. Or tap My plane for the photo with the plane's age, seats and engines.</li><li>The photo shows with the photographer's name. Tap the credit to open the photo page on Planespotters.net.</li></ol>
+    <ol><li>Tap the slim card, then the Aircraft tile. Or open the plane before yours for the photo with the plane's age, seats and engines.</li><li>The photo shows with the photographer's name. Tap the credit to open the photo page on Planespotters.net.</li></ol>
 
     <h2>Keep flights in your calendar</h2>
     <ol><li>Settings, Calendar, turn on Keep flights in my calendar, and allow the calendar.</li><li>Each flight is written with its latest times, terminal and gate. Turn it off and every event Steward wrote is removed.</li></ol>
@@ -431,7 +431,7 @@ page("faq.html", "Questions", "Answers to common questions about Steward: the su
     <p>No. Boarding and doors are our estimate. The airline's time always wins.</p>
 
     <h2>Who sees my shared ETA?</h2>
-    <p>Anyone with the link. They see a card of the flight and a page that follows it live, in their own time. It shows the flight only, never your seat or your name, and ends a few hours after you land. Stop sharing the live link, on the flight screen, ends it at once.</p>
+    <p>Anyone with the link. They see a card of the flight and a page that follows it live, in their own time. It shows the flight only, never your seat or your name, and ends a few hours after you land. Stop sharing the live link, in the flight sheet, ends it at once.</p>
 
     <h2>Why do I not see the status bar chip?</h2>
     <p>The chip in the status bar is on Android 16 and newer. On older Android the live update shows in the notification shade and on the lock screen.</p>
@@ -466,7 +466,7 @@ page("report.html", "Report a bug", "How to report a Steward bug or ask for a fe
     <dl class="rows plate">
       <div><dt>App version</dt><dd>Android settings, Apps, Steward.</dd></div>
       <div><dt>Phone model and Android version</dt><dd>Android settings, About phone.</dd></div>
-      <div><dt>Which screen</dt><dd>Flights, Add flight, the flight screen, My plane, the plane photo, the boarding pass, the live update, an alert, Passport, Settings, the plans page, or the widget.</dd></div>
+      <div><dt>Which screen</dt><dd>Flights, Add flight, the flight sheet, Your plane, the plane photo, the boarding pass, the live update, an alert, Passport, Settings, the plans page, or the widget.</dd></div>
       <div><dt>The flight</dt><dd>The flight number and day, if the bug is about one flight.</dd></div>
       <div><dt>Steps</dt><dd>What you did, one step per line, so we can do the same.</dd></div>
       <div><dt>Expected and actual</dt><dd>What you thought would happen, and what happened.</dd></div>
