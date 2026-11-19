@@ -90,7 +90,6 @@ page("index.html", "Home", "The user guide for Steward, the flight tracker for A
         <div><dt>Share your ETA</dt><dd>A live link for whoever picks you up, with a card of the route, the times and the status. The page follows the flight live in any browser and gives the arrival in the reader's own time. It shows the flight only, never your seat or name, and ends a few hours after you land.</dd></div>
         <div><dt>Your plane</dt><dd>How often your flight leaves and lands late, a photo of the very plane with its age, seats and engines, and the plane before yours.</dd></div>
         <div><dt>Your pass stays yours</dt><dd>Boarding passes are sealed on the phone and kept out of screenshots, and over the lock screen only the pass for the flight you are at the airport for shows.</dd></div>
-        <div><dt>Passport</dt><dd>Every flight you follow fills it: a turning globe with the year's routes drawn in gold, the distance, the hours in the air and the airports.</dd></div>
       </dl>
 
       <h2>Plans</h2>
@@ -104,7 +103,7 @@ page("index.html", "Home", "The user guide for Steward, the flight tracker for A
     </div>
 """)
 
-page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the flight sheet, connections, Your plane, the live update, alerts, the boarding pass, Share ETA, Passport, Settings and the subscription.", f"""
+page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the flight sheet, connections, Your plane, the live update, alerts, the boarding pass, Share ETA, Settings and the subscription.", f"""
     <div class="doc">
     <p class="lbl">Guide</p>
     <h1>How Steward works</h1>
@@ -113,8 +112,8 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Steward runs on Android 10 or newer. It has no account and no sign in. Every trip you follow is watched live by a paid flight data service, so using Steward needs a subscription; there is no free version and no ads. New subscribers get 3 days free through Google Play.</p>
     <p>Steward asks for notifications, so alerts can reach you. Other asks come only when you turn on the thing that needs them: the calendar for Look in my calendar, and a rough location for From where I am.</p>
 
-    <h2>Four tabs</h2>
-    <p>The bar at the foot of the screen has four tabs, Flights, Sky, Passport and Settings, and a round add button for a new flight. Read at the top, tap at the bottom: the big buttons of each screen sit in thumb reach.</p>
+    <h2>One screen</h2>
+    <p>Steward is one screen: your flights, with the next one on top. A round add button sits at the foot for a new flight, and Settings is behind the gear. Read at the top, tap at the bottom: the big buttons sit in thumb reach.</p>
 
     <h2>Flights</h2>
     <p>Flights is the home screen, and it shows your next flight on one view: a slim card with the number, the route and the day (LH 400 | ZAG to LHR | Thu, Nov 19), one sentence about what happens next, and the whole day on one timeline. Swipe the card to move between flights. Tap the slim card to open the flight sheet: the photo of your plane, seat, aircraft and distance, Share, Directions and Stop following. A flight you just added opens here, with no screen of its own.</p>
@@ -169,12 +168,6 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <h2>Share ETA</h2>
     <p>Share ETA sends a short message in the phone's language, written like a boarding card: the route and day, when it leaves and lands, the status (ON TIME, LATE, IN THE AIR, LANDED or CANCELLED) and a line that fills as the flight goes. Under it goes a live link to the people picking you up, with a card of the route, the times and the status that chats show as a preview. The page opens in any browser, with no app and no account. It says in one sentence where the flight is, draws the route with the plane on it, gives the gate and terminal and the arrival in the reader's own time, and keeps itself up to date. It shows the flight only, never your seat or your name, and it ends a few hours after you land. Tell them again when I land, in the share sheet, gives you a Send that I landed note on arrival. Stop sharing the live link, in the flight sheet, ends it at once.</p>
 
-    <h2>Sky</h2>
-    <p>Sky shows a turning globe with the flights people follow or look up with Steward, from a month before take off to a week after landing. A plane sits on each route that should be in the air now, placed by its times, so it is close, not exact. Under them, small dots are the airline flights in the air right now, heard by volunteers' ADS-B receivers (FlyItalyADSB, CC BY-SA 4.0, and adsb.lol, ODbL 1.0), each with a short wake that shows its heading; military aircraft and aircraft whose owners asked for privacy are left out. Pinch, double tap or use the zoom buttons to come in close; up close the dots turn into planes, and tapping one shows its flight, airline, aircraft, height and speed while the globe follows it. Below are how many are in the air, on the map and the airports, then the flights in the air, landing soonest first; tap one to turn the globe to it. It shows no flight numbers and nothing about who follows a flight, and looking needs no plan.</p>
-
-    <h2>Passport</h2>
-    <p>Every flight you follow lands in Passport when it reaches the gate. Passport opens on a turning globe with the year's routes drawn in gold; drag to turn it. Below it: the kilometres and how many times around Earth, the flights, the hours in the air and the airports, flights per month, how many arrived on time (within 15 minutes of the timetable), and the list of flights. With more than one year, tap a year to switch.</p>
-
     <h2>On the home screen and in Quick Settings</h2>
     <dl class="rows plate">
       <div><dt>Next flight widget</dt><dd>The countdown, gate and status of your next flight.</dd></div>
@@ -186,7 +179,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Settings is the third tab: one list of short rows, each opening its own page. Back returns to the list where you left it.</p>
     <dl class="rows plate">
       <div><dt>Needs a fix</dt><dd>Shows only when Android holds something back, each with a Fix button: Notifications, Live updates on the lock screen (Android 16 and newer) and Exact timing (Android 12 and newer). When all is on, the list starts with Look.</dd></div>
-      <div><dt>Look</dt><dd>Match the phone, Dark or Light, and Sky colours, a faint tint of the hour on home. Dark is a calm graphite, with blue kept for what you can tap.</dd></div>
+      <div><dt>Look</dt><dd>Match the phone, Dark or Light. Dark is a calm graphite, with blue kept for what you can tap.</dd></div>
       <div><dt>Your trips: Alerts</dt><dd>Four switches: Before you fly (check in, when to leave, boarding with your pass), Changes to your flight (a new gate, delays of 15 minutes or more, a late plane), Take off and landing (with the arrival gate and your bag belt), and Live on the lock screen. Cancellations and diversions always reach you.</dd></div>
       <div><dt>Your trips: Leaving for the airport</dt><dd>Time to the airport, Be at the airport, and From where I am, a rough location on the day of travel that stays on the phone.</dd></div>
       <div><dt>Your trips: Boarding pass</dt><dd>Show on the lock screen: at the airport, without unlocking.</dd></div>
