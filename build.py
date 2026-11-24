@@ -180,6 +180,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <dl class="rows plate">
       <div><dt>Needs a fix</dt><dd>Shows only when Android holds something back, each with a Fix button: Notifications, Live updates on the lock screen (Android 16 and newer) and Exact timing (Android 12 and newer). When all is on, the list starts with Look.</dd></div>
       <div><dt>Look</dt><dd>Match the phone, Dark or Light. Dark is a calm graphite, with blue kept for what you can tap.</dd></div>
+      <div><dt>Language</dt><dd>Pick the language Steward speaks, or choose Follow the phone. The choice is only for Steward: the phone keeps its own language. The same choice is in Android Settings, Apps, Steward, Language.</dd></div>
       <div><dt>Your trips: Alerts</dt><dd>Four switches: Before you fly (check in, when to leave, boarding with your pass), Changes to your flight (a new gate, delays of 15 minutes or more, a late plane), Take off and landing (with the arrival gate and your bag belt), and Live on the lock screen. Cancellations and diversions always reach you.</dd></div>
       <div><dt>Your trips: Leaving for the airport</dt><dd>Time to the airport, Be at the airport, and From where I am, a rough location on the day of travel that stays on the phone.</dd></div>
       <div><dt>Your trips: Boarding pass</dt><dd>Show on the lock screen: at the airport, without unlocking.</dd></div>
@@ -240,6 +241,9 @@ page("cookbook.html", "Cookbook", "Short Steward recipes: add a flight, read a b
 
     <h2>Know when to leave for the airport</h2>
     <ol><li>Settings, Leaving for the airport, set Time to the airport and Be at the airport.</li><li>For a guess from where you are on the day, turn on From where I am. The longer time wins.</li></ol>
+
+    <h2>Change the language of Steward</h2>
+    <ol><li>Settings, Language.</li><li>Tap a language, or Follow the phone to use the phone's own. Back returns to Settings.</li></ol>
 
     <h2>Switch to miles or Fahrenheit</h2>
     <ol><li>Settings, Units.</li><li>Tap °C or °F for Temperature, and km or mi for Distance. Every distance in the app follows it.</li></ol>
