@@ -116,7 +116,7 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
     <p>Steward is one screen: your flights, with the next one on top. The plus adds a flight and the gear opens Settings.</p>
 
     <h2>Flights</h2>
-    <p>Flights is the home screen, and it shows your next flight on one view: a slim card with the number, the route and the day (LH 400 | ZAG to LHR | Thu, Nov 19), one sentence about what happens next, and the whole day on one timeline. Swipe the card to move between flights. Tap the slim card to open the flight sheet: the photo of your plane, seat, aircraft and distance, Share, Directions and Stop following. A flight you just added opens here, with no screen of its own.</p>
+    <p>Flights is the home screen, and it shows your next flight on one view: a slim card with the number, the route and the day (LH 400 | ZAG to LHR | Thu, Nov 19), one sentence about what happens next, and the whole day on one timeline. Swipe the card to move between flights. Tap the slim card to open the flight sheet: the photo of your plane, seat, aircraft and distance, Share, Directions and Stop following. A flight you just added opens here, with no screen of its own. An hour after it lands, a flight with no next leg says Flight complete, with its air time and distance, and the one button is Stop following.</p>
     <dl class="rows plate">
       <div><dt>Found in your calendar</dt><dd>With Look in my calendar on, flights Gmail put in your calendar wait here. Tap Add, or Not mine to hide one.</dd></div>
       <div><dt>Travel day</dt><dd>On the day you fly, the next flight fills the top in big type: the gate (or Gate soon), when it leaves and the time to go, with Boarding pass and Share ETA buttons.</dd></div>
