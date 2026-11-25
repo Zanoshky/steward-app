@@ -170,13 +170,14 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
 
     <h2>On the home screen and in Quick Settings</h2>
     <dl class="rows plate">
-      <div><dt>Next flight widget</dt><dd>The countdown, gate and status of your next flight. Add it from Settings, Add the widget, or touch and hold an empty spot on the home screen, tap Widgets and pick Steward.</dd></div>
+      <div><dt>Next flight widget</dt><dd>The countdown, gate and status of your next flight. Add it from Settings, Widgets and tiles, or touch and hold an empty spot on the home screen, tap Widgets and pick Steward.</dd></div>
       <div><dt>Boarding pass tile</dt><dd>A Quick Settings tile with your next pass, one tap away.</dd></div>
       <div><dt>Shortcuts</dt><dd>Touch and hold the Steward icon for Boarding pass, Share ETA and Add flight.</dd></div>
     </dl>
 
     <h2>Settings</h2>
-    <p>Settings is the third tab: one list of short rows, each opening its own page. Back returns to the list where you left it.</p>
+    <p>Settings is the third tab: one list of short rows, each opening its own page. Back returns to the list where you left it. Widgets and tiles and About have pages of their own, and Privacy, Help and About sit at the end.</p>
+    <p><strong>New in 1.43:</strong> Settings is tidier: About and Widgets and tiles have pages of their own, and Privacy, Help and About sit at the end.</p>
     <dl class="rows plate">
       <div><dt>Needs a fix</dt><dd>Shows only when Android holds something back, each with a Fix button: Notifications, Live updates on the lock screen (Android 16 and newer) and Exact timing (Android 12 and newer). When all is on, the list starts with Look.</dd></div>
       <div><dt>Look</dt><dd>Match the phone, Dark or Light. Dark is a calm graphite, with blue kept for what you can tap.</dd></div>
@@ -186,10 +187,11 @@ page("guide.html", "Guide", "How to use Steward: Flights, adding a flight, the f
       <div><dt>Your trips: Boarding pass</dt><dd>Show on the lock screen: at the airport, without unlocking.</dd></div>
       <div><dt>Your trips: Calendar</dt><dd>Look in my calendar, and Keep flights in my calendar, which writes each flight with its latest times, terminal and gate. Gmail's own event keeps the booked times.</dd></div>
       <div><dt>Your trips: Units</dt><dd>Temperature in °C or °F, for the weather where you land, and Distance in km or mi, on each flight and in Passport. Both start from your phone's region.</dd></div>
+      <div><dt>Widgets and tiles</dt><dd>Opens a page where you add the Next flight widget to the home screen.</dd></div>
       <div><dt>Privacy</dt><dd>Promises, permissions and your data: what Steward never does, every permission it holds and why, then Download my data and Delete my data.</dd></div>
       <div><dt>Plan</dt><dd>Your plan with when it renews or ends and the flights left this month, Change, 10 more flights, Manage subscription and Restore purchase. Without a plan: Start your subscription, and Access code for a code from Steward support.</dd></div>
       <div><dt>Help</dt><dd>User guide, this guide. Report a bug or ask for a feature, on GitHub. Privacy policy.</dd></div>
-      <div><dt>About</dt><dd>The version, Terms, and where the weather and the aircraft photos come from.</dd></div>
+      <div><dt>About</dt><dd>The last row. It opens a page with the version, Terms, and where the weather and the aircraft photos come from.</dd></div>
     </dl>
 
     <h2>Without a connection</h2>
